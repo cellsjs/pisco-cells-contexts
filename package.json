@@ -1,0 +1,13 @@
+{
+  "name": "pisco-cells-contexts",
+  "version": "1.0.0",
+  "description": "Pisco context definitions for Cells project",
+  "keywords": [
+    "pisco-recipe"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
