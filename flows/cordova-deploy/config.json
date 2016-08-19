@@ -1,0 +1,26 @@
+{
+  "name": "cordova-deploy",
+  "description": "Deploy the distribution in the folder ./www of a Cordova App",
+  "steps": {
+    "cordova-inquirer": {
+      "app" : {
+        "requires" : {
+          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+        }
+      }
+    },
+    "gulpcordova": {
+      "app" : {
+        "requires" : {
+          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+        }
+      },
+      "inputs": {
+        "type": { "cordova-inquirer": "type" },
+        "environment": { "cordova-inquirer": "environment" },
+        "startPoint": { "cordova-inquirer": "startPoint" },
+        "cordovaApp": { "cordova-inquirer": "cordovaApp" }
+      }
+    }
+  }
+}

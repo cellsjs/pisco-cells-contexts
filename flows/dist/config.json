@@ -1,0 +1,13 @@
+{
+  "name": "dist",
+  "description": "Make the distribution of a Cells application",
+  "steps": {
+    "gulpdist": {
+      "app": {
+        "requires": {
+          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+        }
+      }
+    }
+  }
+}

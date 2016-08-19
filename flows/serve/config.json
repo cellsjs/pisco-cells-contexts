@@ -1,0 +1,38 @@
+{
+  "name": "serve",
+  "description": "Serve the distribution of a Cells application",
+  "steps": {
+    "serve-inquirer": {
+      "app" : {
+        "requires" : {
+          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+        }
+      }
+    },
+    "gulpdist": {
+      "app" : {
+        "requires" : {
+          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+        }
+      },
+      "inputs": {
+        "type": { "serve-inquirer": "type" },
+        "environment": { "serve-inquirer": "environment" },
+        "startPoint": { "serve-inquirer": "startPoint" }
+      }
+    },
+    "gulpserve": {
+      "app" : {
+        "requires" : {
+          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+        }
+      },
+      "inputs": {
+        "type": { "serve-inquirer": "type" },
+        "environment": { "serve-inquirer": "environment" },
+        "mocks": { "serve-inquirer": "mocks" },
+        "startPoint": { "serve-inquirer": "startPoint" }
+      }
+    }
+  }
+}

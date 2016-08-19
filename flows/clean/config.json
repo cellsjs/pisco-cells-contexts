@@ -1,0 +1,13 @@
+{
+  "name": "clean",
+  "description": "Clean the distribution of a Cells application",
+  "steps": {
+    "gulpclean": {
+      "app" : {
+        "requires" : {
+          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+        }
+      }
+    }
+  }
+}
