@@ -1,0 +1,13 @@
+{
+  "steps": {
+    "create-cordova-plugin" : {
+      "cordova-plugin": {
+        "requires": {
+          "pisco-cells-cordova-plugin": "git+https://descinet.bbva.es/stash/scm/cellsnative/pisco-cells-cordova-plugin.git#0.1.1"
+        }
+      }
+    }
+  },
+  "name": "create",
+  "description": "Create a cordova plugin"
+}
