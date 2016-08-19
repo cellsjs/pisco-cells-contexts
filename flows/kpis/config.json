@@ -1,0 +1,13 @@
+{
+  "name": "kpis",
+  "description": "Show cells kpis",
+  "steps": {
+    "show-kpis": {
+      "environment" : {
+        "requires" : {
+          "cells-stats": "git+https://descinet.bbva.es/stash/scm/ctool/cells-stats.git#0.3.1"
+        }
+      }
+    }
+  }
+}
