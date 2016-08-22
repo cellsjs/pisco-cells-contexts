@@ -1,0 +1,13 @@
+{
+  "name": "check-mocks",
+  "description": "Check composer mocks",
+  "steps": {
+    "check-mocks": {
+      "app": {
+        "requires": {
+          "pisco-cells-app-check-composer-mocks": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-app-check-composer-mocks.git#0.2.1"
+        }
+      }
+    }
+  }
+}
