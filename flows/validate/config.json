@@ -6,28 +6,28 @@
     "lint": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-lint": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-lint.git#0.4.2"
+          "pisco-cells-component-lint": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-lint.git#0.4.3"
         }
       }
     },
     "unit-tests": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-unit-tests": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-unit-tests.git#0.3.0"
+          "pisco-cells-component-unit-tests": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-unit-tests.git#0.3.1"
         }
       }
     },
     "demo-tests": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-demo-tests": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-demo-tests.git#0.3.0"
+          "pisco-cells-component-demo-tests": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-demo-tests.git#0.3.1"
         }
       }
     },
     "check-version": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-check-version": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-check-version.git#0.2.0"
+          "pisco-cells-component-check-version": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-check-version.git#0.2.1"
         }
       }
     }
