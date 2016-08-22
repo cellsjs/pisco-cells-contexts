@@ -1,0 +1,13 @@
+{
+  "name": "version",
+  "description": "Versioning process for components",
+  "steps": {
+    "version": {
+      "component" : {
+        "requires" : {
+          "pisco-cells-component-version": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-version.git#0.2.1"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "polylint",
+  "description": "Cells components polylinter",
+  "type": "normal",
+  "steps": {
+    "polylint": {
+      "component" : {
+        "requires" : {
+          "pisco-polylint": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-polylint.git#0.2.1"
+        }
+      }
+    }
+  }
+}

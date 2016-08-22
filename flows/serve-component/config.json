@@ -1,0 +1,30 @@
+{
+  "name": "serve",
+  "description": "Serve your components",
+  "steps": {
+    "bower-install": {
+      "component" : {
+        "requires" : {
+          "pisco-cells-serve": "git+https://descinet.bbva.es/stash/scm/cellslabs/pisco-cells-serve.git#0.3.1"
+        }
+      }
+    },
+    "polyserve": {
+      "component" : {
+        "requires" : {
+          "pisco-cells-serve": "git+https://descinet.bbva.es/stash/scm/cellslabs/pisco-cells-serve.git#0.3.1"
+        }
+      }
+    },
+    "browser-sync": {
+      "component" : {
+        "requires" : {
+          "pisco-cells-serve": "git+https://descinet.bbva.es/stash/scm/cellslabs/pisco-cells-serve.git#0.3.1"
+        }
+      },
+      "inputs": {
+        "proxyPort": { "polyserve": "port" }
+      }
+    }
+  }
+}

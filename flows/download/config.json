@@ -1,0 +1,13 @@
+{
+  "name": "download",
+  "description": "Environment download for project cells",
+  "steps": {
+    "download": {
+      "environment": {
+        "requires": {
+          "pisco-cells-environment-download": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-environment-download.git#0.4.1"
+        }
+      }
+    }
+  }
+}
