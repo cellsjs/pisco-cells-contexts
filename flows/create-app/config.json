@@ -2,29 +2,10 @@
   "name": "create",
   "description": "Create a Cells app",
   "steps": {
-    "npm": {
-      "params": {
-        "installCmds": [
-          {
-            "cmd": "npm",
-            "args": ["install","-g","yo"]
-          },
-          {
-            "cmd": "npm",
-            "args": ["install","-g","bower"]
-          },
-          {
-            "cmd": "npm",
-            "args": ["install","-g","git+https://descinet.bbva.es/stash/scm/cel/generator-cells-starter-kit.git"],
-            "version": "5.0.3"
-          }
-        ]
-      }
-    },
     "create-app" : {
       "app" : {
         "requires" : {
-          "pisco-cells-app-create": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-app-create.git#0.5.1"
+          "pisco-cells-app-create": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-app-create.git#0.5.2"
         }
       }
     }
