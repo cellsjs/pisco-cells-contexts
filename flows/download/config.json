@@ -1,6 +1,7 @@
 {
   "name": "download",
   "description": "Environment download for project cells",
+  "isGenerator": true,
   "steps": {
     "download": {
       "environment": {
