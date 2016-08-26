@@ -1,1 +1,9 @@
-{}
+{
+  "params" : {
+    "versions" : {
+      "chrome": {
+        "option": "--product-version"
+      }
+    }
+  }
+}
