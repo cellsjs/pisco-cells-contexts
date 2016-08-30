@@ -20,7 +20,7 @@
     "demo-tests": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-demo-tests": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-demo-tests.git#0.4.0"
+          "pisco-cells-component-demo-tests": "git+ssh://git@globaldevtools.bbva.com:7999/ctool/pisco-cells-component-demo-tests.git#0.4.0"
         }
       }
     },
