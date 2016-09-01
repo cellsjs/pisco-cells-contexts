@@ -5,14 +5,14 @@
     "serve-inquirer": {
       "app" : {
         "requires" : {
-          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+          "cells-app": "^0.5.1"
         }
       }
     },
     "gulpdist": {
       "app" : {
         "requires" : {
-          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+          "cells-app": "^0.5.1"
         }
       },
       "inputs": {
@@ -24,7 +24,7 @@
     "gulpserve": {
       "app" : {
         "requires" : {
-          "cells-app": "git+https://descinet.bbva.es/stash/scm/ctool/cells-app#0.5.1"
+          "cells-app": "^0.5.1"
         }
       },
       "inputs": {

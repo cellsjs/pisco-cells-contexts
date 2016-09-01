@@ -3,14 +3,14 @@
     "cordova-check": {
       "cordova-app": {
         "requires": {
-          "cells-cordova-cli": "git+https://descinet.bbva.es/stash/scm/cel/cells-cordova-cli.git#0.3.1"
+          "cells-cordova-cli": "^0.3.1"
         }
       }
     },
     "package": {
       "cordova-app": {
         "requires": {
-          "cells-cordova-cli": "git+https://descinet.bbva.es/stash/scm/cel/cells-cordova-cli.git#0.3.1"
+          "cells-cordova-cli": "^0.3.1"
         }
       }
     }

@@ -6,7 +6,7 @@
     "download": {
       "environment": {
         "requires": {
-          "pisco-cells-environment-download": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-environment-download.git#0.4.1"
+          "pisco-cells-environment-download": "^0.4.1"
         }
       }
     }

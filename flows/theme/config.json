@@ -3,7 +3,7 @@
     "theme": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-theme": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-theme.git#0.2.1"
+          "pisco-cells-component-theme": "^0.2.1"
         }
       }
     }

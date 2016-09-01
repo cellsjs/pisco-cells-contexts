@@ -6,17 +6,17 @@
     "create" : {
       "cordova-plugin": {
         "requires": {
-          "pisco-cells-cordova-plugin": "git+https://descinet.bbva.es/stash/scm/cellsnative/pisco-cells-cordova-plugin.git#0.1.2"
+          "pisco-cells-cordova-plugin": "^0.1.2"
         }
       },
       "app" : {
         "requires" : {
-          "pisco-cells-app-create": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-app-create.git#0.5.3"
+          "pisco-cells-app-create": "^0.5.3"
         }
       },
       "component" : {
         "requires" : {
-          "pisco-cells-component-create": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-create.git#0.3.1"
+          "pisco-cells-component-create": "^0.3.1"
         }
       }      
     }

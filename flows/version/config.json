@@ -5,7 +5,7 @@
     "version": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-version": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-version.git#0.2.1"
+          "pisco-cells-component-version": "^0.2.1"
         }
       }
     }

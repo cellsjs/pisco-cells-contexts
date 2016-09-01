@@ -5,7 +5,7 @@
     "show-kpis": {
       "environment" : {
         "requires" : {
-          "cells-stats": "git+https://descinet.bbva.es/stash/scm/ctool/cells-stats.git#0.3.1"
+          "cells-stats": "^0.3.1"
         }
       }
     }

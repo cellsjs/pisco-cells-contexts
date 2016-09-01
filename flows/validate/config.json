@@ -6,28 +6,28 @@
     "lint": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-lint": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-lint.git#0.4.3"
+          "pisco-cells-component-lint": "^0.4.3"
         }
       }
     },
     "unit-tests": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-unit-tests": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-unit-tests.git"
+          "pisco-cells-component-unit-tests": "^0.3.4"
         }
       }
     },
     "demo-tests": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-demo-tests": "git+ssh://git@globaldevtools.bbva.com:7999/ctool/pisco-cells-component-demo-tests.git#0.4.0"
+          "pisco-cells-component-demo-tests": "^0.4.0"
         }
       }
     },
     "check-version": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-check-version": "git+https://descinet.bbva.es/stash/scm/ctool/pisco-cells-component-check-version.git#0.2.1"
+          "pisco-cells-component-check-version": "^0.2.1"
         }
       }
     }
