@@ -1,0 +1,65 @@
+{
+  "name": "generate-kpis",
+  "description": "Generate kpis",
+  "isGenerator": true,
+  "steps": {
+    "s3-vars": {
+      "environment": {
+        "requires": {
+          "pisco-bamboo-env": "git+ssh://git@globaldevtools.bbva.com:7999/ctool/pisco-bamboo-env.git#0.2.0"
+        }
+      }
+    },
+    "install-apps": {
+      "environment": {
+        "requires": {
+          "pisco-cells-kpis-ci": "git+ssh://git@globaldevtools.bbva.com:7999/ctool/pisco-cells-kpis-ci.git#0.7.0"
+        }
+      }
+    },
+    "generate-kpis": {
+      "environment": {
+        "requires": {
+          "pisco-cells-kpis-ci": "git+ssh://git@globaldevtools.bbva.com:7999/ctool/pisco-cells-kpis-ci.git#0.7.0"
+        }
+      }
+    },
+    "save-kpis": {
+      "environment": {
+        "requires": {
+          "pisco-cells-kpis-ci": "git+ssh://git@globaldevtools.bbva.com:7999/ctool/pisco-cells-kpis-ci.git#0.7.0"
+        }
+      },
+      "inputs" : {
+        "kpis" : {"generate-kpis": "kpis"}
+      }
+    },
+    "upload": {
+      "environment": {
+        "requires": {
+          "pisco-plugin-s3": "git+ssh://git@globaldevtools.bbva.com:7999/ctool/pisco-plugin-s3.git#0.2.0"
+        }
+      },
+      "params": {
+          "remotedir": "cells/stats"
+      },
+      "inputs": {
+        "localdir": {"generate-kpis": "resultsRawFolder"},
+        "bucket": {"s3-vars": "bucket"},
+        "region": {"s3-vars": "region"},
+        "key": {"s3-vars": "key"},
+        "password": {"s3-vars": "password"}
+      }
+    },
+    "clean": {
+      "environment": {
+        "requires": {
+          "pisco-plugin-s3": "git+ssh://git@globaldevtools.bbva.com:7999/ctool/pisco-plugin-s3.git#0.2.0"
+        }
+      },
+      "inputs": {
+        "cleanFolder": {"install-apps": "installedAppsFolder"}
+      }
+    }
+  }
+}
