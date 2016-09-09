@@ -5,7 +5,7 @@
     "gulpdist": {
       "app": {
         "requires": {
-          "cells-app": "^0.5.1"
+          "cells-app": "^0.6.0"
         }
       }
     }

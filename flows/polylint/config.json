@@ -6,7 +6,7 @@
     "polylint": {
       "component" : {
         "requires" : {
-          "pisco-polylint": "^0.2.1"
+          "pisco-polylint": "^0.3.0"
         }
       }
     }

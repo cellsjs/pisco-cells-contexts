@@ -3,7 +3,7 @@
     "check-theme": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-theme": "^0.2.1"
+          "pisco-cells-component-theme": "^0.3.0"
         }
       }
     }

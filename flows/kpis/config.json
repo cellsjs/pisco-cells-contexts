@@ -5,7 +5,7 @@
     "show-kpis": {
       "environment" : {
         "requires" : {
-          "cells-stats": "^0.3.1"
+          "cells-stats": "^0.4.0"
         }
       }
     }
