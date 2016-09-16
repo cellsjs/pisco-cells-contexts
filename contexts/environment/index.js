@@ -12,7 +12,7 @@ module.exports = {
 
     return bowerJson.name
       && bowerJson.name === 'repo-configs'
-      && fsUtils.isDirectory('projects')
+      && (fsUtils.isDirectory('projects') || fsUtils.isDirectory('apps'))
       && fsUtils.isDirectory('components');
   }
 
