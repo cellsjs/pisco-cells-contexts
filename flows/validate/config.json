@@ -30,6 +30,13 @@
           "pisco-cells-component-check-version": "^0.3.0"
         }
       }
+    },
+    "check-theme": {
+      "component" : {
+        "requires" : {
+          "pisco-cells-component-theme": "^0.3.0"
+        }
+      }
     }
   }
 }
