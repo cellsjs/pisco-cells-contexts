@@ -2,13 +2,6 @@
   "name": "serve",
   "description": "Serve your components",
   "steps": {
-    "bower-install": {
-      "component" : {
-        "requires" : {
-          "pisco-cells-serve": "^0.4.0"
-        }
-      }
-    },
     "polyserve": {
       "component" : {
         "requires" : {
