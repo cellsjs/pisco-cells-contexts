@@ -1,0 +1,11 @@
+{
+  "name": "start-branch",
+  "description": "Publish process: git flow ci ",
+  "steps": {
+    "start": {
+      "component" : {},
+      "recipe" : {},
+      "app" : {}
+    }
+  }
+}

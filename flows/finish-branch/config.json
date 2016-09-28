@@ -1,0 +1,16 @@
+{
+  "name": "finish-branch",
+  "description": "Finish process: git flow ci ",
+  "steps": {
+    "merge": {
+      "component" : {},
+      "recipe" : {},
+      "app" : {}
+    },
+    "delete": {
+      "component" : {},
+      "recipe" : {},
+      "app" : {}
+    }
+  }
+}

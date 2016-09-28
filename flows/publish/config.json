@@ -1,0 +1,14 @@
+{
+  "name": "publish",
+  "description": "Publish process: git flow ci ",
+  "steps": {
+    "validate": {
+      "type" : "flow"
+    },
+    "publish": {
+      "component" : {},
+      "recipe" : {},
+      "app" : {}
+    }
+  }
+}
