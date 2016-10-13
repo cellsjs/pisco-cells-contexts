@@ -1,8 +1,8 @@
 {
-  "name": "dist",
-  "description": "Make the distribution of a Cells application",
+  "name": "build",
+  "description": "Build the distribution of a Cells application",
   "steps": {
-    "gulpdist": {
+    "build": {
       "app": {
         "requires": {
           "cells-app": "^0.6.0"

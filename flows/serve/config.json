@@ -2,36 +2,11 @@
   "name": "serve-app",
   "description": "Serve the distribution of a Cells application",
   "steps": {
-    "serve-inquirer": {
+    "serve": {
       "app" : {
         "requires" : {
           "cells-app": "^0.6.0"
         }
-      }
-    },
-    "gulpdist": {
-      "app" : {
-        "requires" : {
-          "cells-app": "^0.6.0"
-        }
-      },
-      "inputs": {
-        "type": { "serve-inquirer": "type" },
-        "environment": { "serve-inquirer": "environment" },
-        "startPoint": { "serve-inquirer": "startPoint" }
-      }
-    },
-    "gulpserve": {
-      "app" : {
-        "requires" : {
-          "cells-app": "^0.6.0"
-        }
-      },
-      "inputs": {
-        "type": { "serve-inquirer": "type" },
-        "environment": { "serve-inquirer": "environment" },
-        "mocks": { "serve-inquirer": "mocks" },
-        "startPoint": { "serve-inquirer": "startPoint" }
       }
     }
   }
