@@ -1,0 +1,24 @@
+{
+  "name": "changeDeps",
+  "description": "Change dependencies of all repos",
+  "isGenerator": true,
+  "params": {
+    "neverAskMove": true
+  },
+  "steps": {
+    "checkSSH": {
+      "default": {
+        "requires": {
+          "cells-migration-tool": "^0.1.2"
+        }
+      }
+    },
+    "d2rAll": {
+      "default": {
+        "requires": {
+          "cells-migration-tool": "^0.1.2"
+        }
+      }
+    }
+  }
+}

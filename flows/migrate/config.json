@@ -1,0 +1,22 @@
+{
+  "name": "migrate",
+  "description": "Move repositories recursively",
+  "isGenerator": true,
+  "params" : {},
+  "steps": {
+    "checkSSH": {
+      "default": {
+        "requires": {
+          "cells-migration-tool": "^0.1.3"
+        }
+      }
+    },
+    "migrate": {
+      "default": {
+        "requires": {
+          "cells-migration-tool": "^0.1.3"
+        }
+      }
+    }
+  }
+}

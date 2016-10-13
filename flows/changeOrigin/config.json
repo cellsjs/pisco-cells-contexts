@@ -1,0 +1,24 @@
+{
+  "name": "changeOrigin",
+  "description": "Change origin recursively",
+  "isGenerator": true,
+  "params" : {
+    "neverAskMove": true
+  },
+  "steps": {
+    "checkSSH": {
+      "default": {
+        "requires": {
+          "cells-migration-tool": "^0.1.3"
+        }
+      }
+    },
+    "migrate": {
+      "default": {
+        "requires": {
+          "cells-migration-tool": "^0.1.3"
+        }
+      }
+    }
+  }
+}
