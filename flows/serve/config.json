@@ -5,7 +5,7 @@
     "serve": {
       "app" : {
         "requires" : {
-          "cells-app": "^0.6.0"
+          "cells-app": "^0.7.0"
         }
       }
     }
