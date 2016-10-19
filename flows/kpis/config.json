@@ -1,9 +1,9 @@
 {
   "name": "kpis",
-  "description": "Show cells kpis",
+  "description": "Show workspace kpis",
   "steps": {
     "show-kpis": {
-      "environment" : {
+      "workspace" : {
         "requires" : {
           "cells-stats": "^0.4.0"
         }
