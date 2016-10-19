@@ -5,7 +5,7 @@ const fsUtils = require('../../lib/fsUtils');
 module.exports = {
 
   check() {
-    if (fsUtils.readJSON('.piscosour/piscosour.json').context === 'environment') {
+    if (fsUtils.readJSON('.piscosour/piscosour.json').context === 'workspace') {
       return true;
     }
     const bowerJson = fsUtils.readJSON('bower.json');
