@@ -7,14 +7,14 @@
   },
   "steps": {
     "checkSSH": {
-      "default": {
+      "environment": {
         "requires": {
           "cells-migration-tool": "^0.1.2"
         }
       }
     },
     "d2rAll": {
-      "default": {
+      "environment": {
         "requires": {
           "cells-migration-tool": "^0.1.2"
         }

@@ -5,14 +5,14 @@
   "params" : {},
   "steps": {
     "checkSSH": {
-      "default": {
+      "environment": {
         "requires": {
           "cells-migration-tool": "^0.1.3"
         }
       }
     },
     "migrate": {
-      "default": {
+      "environment": {
         "requires": {
           "cells-migration-tool": "^0.1.3"
         }

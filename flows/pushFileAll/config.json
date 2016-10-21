@@ -4,7 +4,7 @@
   "isGenerator": true,
   "steps": {
     "pushAll": {
-      "default": {
+      "environment": {
         "requires": {
           "cells-migration-tool": "^0.1.3"
         }
