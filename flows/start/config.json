@@ -1,5 +1,5 @@
 {
-  "name": "start-branch",
+  "name": "start",
   "description": "Publish process: git flow ci ",
   "steps": {
     "start": {

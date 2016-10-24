@@ -1,5 +1,5 @@
 {
-  "name": "finish-branch",
+  "name": "finish",
   "description": "Finish process: git flow ci ",
   "steps": {
     "merge": {
