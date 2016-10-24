@@ -7,13 +7,7 @@
         }
       }
     },
-    "save": {
-      "cordova-app": {
-        "requires": {
-          "cells-cordova-cli": "^0.4.0"
-        }
-      }
-    }
+    "save": {}
   },
   "name": "save",
   "description": "Save the current state of cordova application in package.json"

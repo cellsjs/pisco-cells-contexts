@@ -14,21 +14,10 @@
         }
       }
     },
-    "migrate": {
-      "environment": {
-        "requires": {
-          "cells-migration-tool": "^0.1.3"
-        }
-      }
-    },
+    "migrate": {},
     "d2rAll": {
       "inputs": {
         "repos": { "migrate": "repos" }
-      },
-      "environment": {
-        "requires": {
-          "cells-migration-tool": "^0.1.3"
-        }
       }
     },
     "publishAll": {
@@ -39,11 +28,6 @@
       },
       "inputs": {
         "repos": { "d2rAll": "repos" }
-      },
-      "environment": {
-        "requires": {
-          "cells-migration-tool": "^0.1.3"
-        }
       }
     }
   }

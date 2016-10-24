@@ -7,13 +7,7 @@
         }
       }
     },
-    "restore": {
-      "cordova-app": {
-        "requires": {
-          "cells-cordova-cli": "^0.4.0"
-      }
-      }
-    }
+    "restore": {}
   },
   "name": "restore",
   "description": "Restore your application from package.json configuration"
