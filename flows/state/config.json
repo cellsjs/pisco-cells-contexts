@@ -7,8 +7,12 @@
         }
       }
     },
-    "check": {},
-    "update": {}
+    "check": {
+      "cordova-app": {}
+    },
+    "update": {
+      "cordova-app": {}
+    }
   },
   "name": "state",
   "description": "Command to help you manage the state of your Cordova Project"

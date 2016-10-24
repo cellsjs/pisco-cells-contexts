@@ -13,6 +13,8 @@
         }
       }
     },
-    "d2rAll": {}
+    "d2rAll": {
+      "environment": {}
+    }
   }
 }

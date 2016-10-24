@@ -10,6 +10,7 @@
       }
     },
     "browser-sync": {
+      "component" : {},
       "inputs": {
         "proxyPort": { "polyserve": "port" }
       }

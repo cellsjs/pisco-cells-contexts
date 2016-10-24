@@ -7,7 +7,9 @@
         }
       }
     },
-    "package": {}
+    "package": {
+      "cordova-app": {}
+    }
   },
   "name": "package",
   "description": "Command to package platforms"

@@ -11,6 +11,8 @@
         }
       }
     },
-    "migrate": {}
+    "migrate": {
+      "environment": {}
+    }
   }
 }

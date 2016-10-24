@@ -14,13 +14,17 @@
         }
       }
     },
-    "migrate": {},
+    "migrate": {
+      "environment": {}
+    },
     "d2rAll": {
+      "environment": {},
       "inputs": {
         "repos": { "migrate": "repos" }
       }
     },
     "publishAll": {
+      "environment": {},
       "params" : {
         "registryDomain" : "dev.globaldevtools.bbva.com" ,
         "registryDomainTarget" : "globaldevtools.bbva.com" ,

@@ -13,6 +13,8 @@
         }
       }
     },
-    "migrate": {}
+    "migrate": {
+      "environment": {}
+    }
   }
 }
