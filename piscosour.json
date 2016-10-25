@@ -4,8 +4,6 @@
       "chrome": {
         "uncheckable" : true
       }
-    },
-    "fromRepo": "descinet.bbva.es/stash/scm",
-    "toRepo":  "globaldevtools.bbva.com:7999"
+    }
   }
 }
