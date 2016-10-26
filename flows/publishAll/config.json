@@ -15,16 +15,28 @@
       }
     },
     "migrate": {
-      "environment": {}
+      "environment": {
+        "requires": {
+          "cells-migration-tool": "^0.1.3"
+        }
+      }
     },
     "d2rAll": {
-      "environment": {},
+      "environment": {
+        "requires": {
+          "cells-migration-tool": "^0.1.3"
+        }
+      },
       "inputs": {
         "repos": { "migrate": "repos" }
       }
     },
     "publishAll": {
-      "environment": {},
+      "environment": {
+        "requires": {
+          "cells-migration-tool": "^0.1.3"
+        }
+      },
       "params" : {
         "registryDomain" : "dev.globaldevtools.bbva.com" ,
         "registryDomainTarget" : "globaldevtools.bbva.com" ,

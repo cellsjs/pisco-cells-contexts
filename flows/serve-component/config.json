@@ -10,7 +10,11 @@
       }
     },
     "browser-sync": {
-      "component" : {},
+      "component" : {
+        "requires" : {
+          "pisco-cells-serve": "^0.4.0"
+        }
+      },
       "inputs": {
         "proxyPort": { "polyserve": "port" }
       }

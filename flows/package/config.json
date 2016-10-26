@@ -8,7 +8,11 @@
       }
     },
     "package": {
-      "cordova-app": {}
+      "cordova-app": {
+        "requires": {
+          "cells-cordova-cli": "^0.4.0"
+        }
+      }
     }
   },
   "name": "package",

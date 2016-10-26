@@ -14,7 +14,11 @@
       }
     },
     "migrate": {
-      "environment": {}
+      "environment": {
+        "requires": {
+          "cells-migration-tool": "^0.1.3"
+        }
+      }
     }
   }
 }
