@@ -5,9 +5,6 @@
     "validate": {
       "type" : "flow"
     },
-    "publish": {
-      "component" : {},
-      "app" : {}
-    }
+    "publish-tmp": {}
   }
 }

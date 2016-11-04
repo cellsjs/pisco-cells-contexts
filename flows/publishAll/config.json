@@ -26,9 +26,6 @@
         "requires": {
           "cells-migration-tool": "^0.1.3"
         }
-      },
-      "inputs": {
-        "repos": { "migrate": "repos" }
       }
     },
     "publishAll": {
