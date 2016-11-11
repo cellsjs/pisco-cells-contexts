@@ -12,10 +12,10 @@
       "app" : {},
       "recipe" : {}
     },
-    "unit-tests": {
+    "unit-testing": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-unit-tests": "^0.4.0"
+          "pisco-cells-component-unit-testing": "^0.1.0"
         }
       },
       "app" : {},
