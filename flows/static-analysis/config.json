@@ -1,0 +1,11 @@
+{
+  "name": "static-analysis",
+  "description": "Static analysis flow for Cells elements",
+  "steps": {
+    "lint": {
+      "component": {},
+      "app": {},
+      "recipe": {}
+    }
+  }
+}
