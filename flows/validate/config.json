@@ -6,7 +6,7 @@
     "lint": {
       "component" : {
         "requires" : {
-          "pisco-cells-component-lint": "^0.5.0"
+          "pisco-cells-component-lint": "^0.6.0"
         }
       },
       "app" : {},
