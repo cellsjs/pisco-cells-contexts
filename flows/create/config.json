@@ -21,7 +21,7 @@
       },
       "workspace": {
         "requires": {
-          "pisco-cells-workspace-create": "^0.6.0"
+          "pisco-cells-workspace-create": "^0.7.0"
         }
       }
     }
