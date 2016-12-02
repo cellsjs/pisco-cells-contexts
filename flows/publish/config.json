@@ -1,10 +1,49 @@
 {
-  "name": "publish",
-  "description": "Publish process: git flow ci ",
   "steps": {
-    "validate": {
-      "type" : "flow"
+    "build-cordova": {
+      "app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.2.6"
+        }
+      },
+      "cordova-app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.2.6"
+        }
+      }
     },
-    "publish-tmp": {}
-  }
+    "package": {
+      "app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.2.6"
+        }
+      },
+      "cordova-app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.2.6"
+        }
+      },
+      "inputs" : {
+        "workingDir" : {"build-cordova": "workingDir"}
+      }
+    },
+    "publish": {
+      "app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.2.6"
+        }
+      },
+      "cordova-app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.2.6"
+        }
+      },
+      "inputs" : {
+        "workingDir" : {"build-cordova": "workingDir"},
+        "appName" : {"build-cordova": "appName"}
+      }
+    }
+  },
+  "name": "publish",
+  "description": "Flow to publish"
 }
