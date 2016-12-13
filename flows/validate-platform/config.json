@@ -6,7 +6,7 @@
     "integration-testing": {
       "cells-platform" : {
         "requires" : {
-          "pisco-cells-platform-validate": "^0.0.2"
+          "pisco-cells-platform-validate": "^0.1.0"
         }
       }
     }
