@@ -3,12 +3,14 @@
     "build-cordova": {
       "app": {
         "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6"
+          "pisco-cells-cordova-app-publish": "^0.2.6",
+          "cells-app": "^0.7.0"
         }
       },
       "cordova-app": {
         "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6"
+          "pisco-cells-cordova-app-publish": "^0.2.6",
+          "cells-app": "^0.7.0"
         }
       }
     },
