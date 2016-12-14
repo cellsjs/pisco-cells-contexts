@@ -1,0 +1,13 @@
+{
+  "name": "upload",
+  "description": "Upload bundle",
+  "steps": {
+    "upload": {
+      "bundle" : {
+        "requires" : {
+          "pisco-cells-assets": "^0.0.1"
+        }
+      }
+    }
+  }
+}
