@@ -5,7 +5,7 @@
     "upload": {
       "bundle" : {
         "requires" : {
-          "pisco-cells-assets": "^0.0.1"
+          "pisco-cells-bundle-upload": "^0.0.2"
         }
       }
     }
