@@ -18,6 +18,9 @@
       "app": {
         "requires": {
           "pisco-cells-cordova-app-publish": "^0.2.6"
+        },
+        "params": {
+          "disableContextCheck" : true
         }
       },
       "cordova-app": {
@@ -33,6 +36,9 @@
       "app": {
         "requires": {
           "pisco-cells-cordova-app-publish": "^0.2.6"
+        },
+        "params": {
+          "disableContextCheck" : true
         }
       },
       "cordova-app": {
