@@ -23,11 +23,6 @@
         "requires": {
           "pisco-cells-workspace-create": "^0.7.0"
         }
-      },
-      "gitflow": {
-        "requires" : {
-          "pisco-gitflow-create": "^0.0.1"
-        }
       }
     }
   }
