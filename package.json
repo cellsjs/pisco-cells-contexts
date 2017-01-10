@@ -1,12 +1,15 @@
 {
   "name": "pisco-cells-contexts",
-  "version": "1.4.17",
+  "version": "1.4.18",
   "description": "Pisco context definitions for Cells project",
   "keywords": [
     "piscosour-recipe"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "pisco-gitflow-contexts": "^0.0.2"
   },
   "devDependencies": {
     "piscosour": "^1.0.0-alpha.8"
