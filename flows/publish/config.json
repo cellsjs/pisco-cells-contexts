@@ -1,23 +1,27 @@
 {
+  "name": "publish",
+  "description": "Publish on every context",
   "steps": {
-    "build-cordova": {
+    "build_": {
+      "implementation-check" : false,
       "app": {
         "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6",
+          "pisco-cells-cordova-app-publish": "^0.3.0",
           "cells-app": "^0.7.0"
         }
       },
       "cordova-app": {
         "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6",
+          "pisco-cells-cordova-app-publish": "^0.3.0",
           "cells-app": "^0.7.0"
         }
       }
     },
     "package": {
+      "implementation-check" : false,
       "app": {
         "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6"
+          "pisco-cells-cordova-app-publish": "^0.3.0"
         },
         "params": {
           "disableContextCheck" : true
@@ -25,17 +29,27 @@
       },
       "cordova-app": {
         "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6"
+          "pisco-cells-cordova-app-publish": "^0.3.0"
         }
       },
       "inputs" : {
-        "workingDir" : {"build-cordova": "workingDir"}
+        "workingDir" : {"build_": "workingDir"}
       }
     },
     "publish": {
+      "master": {
+        "requires": {
+          "pisco-gitflow-publish": "^0.0.1"
+        }
+      },
+      "component": {
+        "requires": {
+          "pisco-cells-component-publish": "^0.0.1"
+        }
+      },
       "app": {
         "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6"
+          "pisco-cells-cordova-app-publish": "^0.3.0"
         },
         "params": {
           "disableContextCheck" : true
@@ -43,15 +57,13 @@
       },
       "cordova-app": {
         "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6"
+          "pisco-cells-cordova-app-publish": "^0.3.0"
         }
       },
       "inputs" : {
-        "workingDir" : {"build-cordova": "workingDir"},
-        "appName" : {"build-cordova": "appName"}
+        "workingDir" : {"build_": "workingDir"},
+        "appName" : {"build_": "appName"}
       }
     }
-  },
-  "name": "publish",
-  "description": "Flow to publish"
+  }
 }
