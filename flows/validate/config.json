@@ -30,15 +30,6 @@
       "app" : {},
       "recipe" : {}
     },
-    "check-version": {
-      "component" : {
-        "requires" : {
-          "pisco-cells-component-check-version": "^0.3.0"
-        }
-      },
-      "app" : {},
-      "recipe" : {}
-    },
     "check-theme": {
       "component" : {
         "requires" : {
