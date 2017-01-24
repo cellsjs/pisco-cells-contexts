@@ -15,6 +15,11 @@
           "pisco-cells-cordova-app-publish": "^0.3.0",
           "cells-app": "^0.7.0"
         }
+      },
+      "catalog": {
+        "requires": {
+          "pisco-cells-catalog-build": "^0.1.0"
+        }
       }
     },
     "package": {
@@ -56,6 +61,11 @@
         }
       },
       "cordova-app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0"
+        }
+      },
+      "catalog": {
         "requires": {
           "pisco-cells-cordova-app-publish": "^0.3.0"
         }
