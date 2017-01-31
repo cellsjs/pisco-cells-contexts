@@ -7,6 +7,11 @@
         "requires": {
           "cells-app": "^0.7.0"
         }
+      },
+      "iconset": {
+        "requires": {
+          "pisco-cells-iconset-create": "^0.1.1"
+        }
       }
     }
   }
