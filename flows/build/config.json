@@ -10,7 +10,7 @@
       },
       "iconset": {
         "requires": {
-          "pisco-cells-iconset-create": "^0.1.1"
+          "pisco-cells-iconset-create": "^0.1.2"
         }
       }
     }
