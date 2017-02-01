@@ -44,12 +44,17 @@
     "publish": {
       "master": {
         "requires": {
-          "pisco-gitflow-publish": "^0.0.1"
+          "pisco-gitflow-publish": "^0.1.0"
+        }
+      },
+      "recipe": {
+        "requires": {
+          "pisco-recipe-publish": "^0.1.0"
         }
       },
       "component": {
         "requires": {
-          "pisco-cells-component-publish": "^0.0.1"
+          "pisco-cells-component-publish": "^0.1.0"
         }
       },
       "app": {
