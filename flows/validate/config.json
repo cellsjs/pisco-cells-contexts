@@ -8,36 +8,28 @@
         "requires" : {
           "pisco-cells-component-lint": "^0.6.0"
         }
-      },
-      "app" : {},
-      "recipe" : {}
+      }
     },
     "unit-testing": {
       "component" : {
         "requires" : {
           "pisco-cells-component-unit-testing": "^0.1.0"
         }
-      },
-      "app" : {},
-      "recipe" : {}
+      }
     },
     "demo-tests": {
       "component" : {
         "requires" : {
           "pisco-cells-component-demo-tests": "^0.5.0"
         }
-      },
-      "app" : {},
-      "recipe" : {}
+      }
     },
     "check-theme": {
       "component" : {
         "requires" : {
           "pisco-cells-component-theme": "^0.3.0"
         }
-      },
-      "app" : {},
-      "recipe" : {}
+      }
     }
   }
 }
