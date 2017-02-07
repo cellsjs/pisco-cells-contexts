@@ -1,0 +1,84 @@
+{
+  "name": "publish",
+  "description": "Publish on every context",
+  "steps": {
+    "build_": {
+      "implementation-check" : false,
+      "app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0",
+          "cells-app": "^0.7.0"
+        }
+      },
+      "cordova-app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0",
+          "cells-app": "^0.7.0"
+        }
+      },
+      "catalog": {
+        "requires": {
+          "pisco-cells-catalog-build": "^0.1.0"
+        }
+      }
+    },
+    "package": {
+      "implementation-check" : false,
+      "app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0"
+        },
+        "params": {
+          "disableContextCheck" : true
+        }
+      },
+      "cordova-app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0"
+        }
+      },
+      "inputs" : {
+        "workingDir" : {"build_": "workingDir"}
+      }
+    },
+    "publish": {
+      "master": {
+        "requires": {
+          "pisco-gitflow-publish": "^0.1.0"
+        }
+      },
+      "recipe": {
+        "requires": {
+          "pisco-recipe-publish": "^0.1.0"
+        }
+      },
+      "component": {
+        "requires": {
+          "pisco-cells-component-publish": "^0.1.0"
+        }
+      },
+      "app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0"
+        },
+        "params": {
+          "disableContextCheck" : true
+        }
+      },
+      "cordova-app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0"
+        }
+      },
+      "catalog": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0"
+        }
+      },
+      "inputs" : {
+        "workingDir" : {"build_": "workingDir"},
+        "appName" : {"build_": "appName"}
+      }
+    }
+  }
+}
