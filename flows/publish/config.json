@@ -43,6 +43,7 @@
     },
     "smoke-testing": {
       "type": "flow",
+      "implementation-check": false,
       "inputs": {
         "workingDir": { "build_": "workingDir" },
         "appName": { "build_": "appName" }
