@@ -41,6 +41,13 @@
         "workingDir" : {"build_": "workingDir"}
       }
     },
+    "smoke-testing": {
+      "type": "flow",
+      "inputs": {
+        "workingDir": { "build_": "workingDir" },
+        "appName": { "build_": "appName" }
+      }
+    },
     "publish": {
       "master": {
         "requires": {
@@ -79,6 +86,6 @@
         "workingDir" : {"build_": "workingDir"},
         "appName" : {"build_": "appName"}
       }
-    }
+    }    
   }
 }
