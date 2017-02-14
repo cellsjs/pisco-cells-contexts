@@ -1,0 +1,35 @@
+{
+  "name": "smoke-testing",
+  "description": "Build Verification Testing",
+  "steps": {
+    "publish": {
+      "catalog": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.0"
+        },
+        "params": {
+          "remoteRootDir": "cells/testing",
+          "s3Uploads": [
+            {
+              "id": "test",
+              "bucket": "${env.dev_aws_s3_bucket}",
+              "region": "${env.aws_region}",
+              "key": "${env.AWS_ACCESS_KEY_ID}",
+              "password": "${env.AWS_SECRET_ACCESS_KEY}"
+            }
+          ]
+        }
+      }
+    },
+    "smoke-testing": {
+      "catalog": {
+        "requires": {
+          "pisco-cells-catalog-smoke-testing": "^0.1.0"
+        }
+      },
+      "inputs": {
+        "baseUrl": { "publish": "baseUrl" }
+      }
+    }
+  }
+}
