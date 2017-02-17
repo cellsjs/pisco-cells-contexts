@@ -6,18 +6,6 @@
       "catalog": {
         "requires": {
           "pisco-cells-cordova-app-publish": "^0.3.4"
-        },
-        "params": {
-          "remoteRootDir": "cells/testing",
-          "s3Uploads": [
-            {
-              "id": "test",
-              "bucket": "${env.dev_aws_s3_bucket}",
-              "region": "${env.aws_region}",
-              "key": "${env.AWS_ACCESS_KEY_ID}",
-              "password": "${env.AWS_SECRET_ACCESS_KEY}"
-            }
-          ]
         }
       }
     },
