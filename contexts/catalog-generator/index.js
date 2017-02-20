@@ -1,6 +1,6 @@
 'use strict';
 
-const fsUtils = require('piscosour/lib/utils/fsUtils');
+const fsUtils = require('../../lib/fsUtils');
 
 module.exports = {
 

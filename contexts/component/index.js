@@ -10,7 +10,7 @@ module.exports = {
     }
     const bowerJson = fsUtils.readJSON('bower.json');
 
-    return bowerJson.dependencies
+    return ! fsUtils.exists('package.json') && bowerJson.dependencies
       && bowerJson.dependencies.polymer
       && bowerJson.name
       && bowerJson.name !== 'repo-configs';
