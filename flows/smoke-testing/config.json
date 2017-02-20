@@ -16,7 +16,7 @@
         }
       },
       "inputs": {
-        "baseUrl": { "deploy": "baseUrl" }
+        "smokeTestsBaseUrl": { "deploy": "baseUrl" }
       }
     }
   }
