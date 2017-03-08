@@ -1,6 +1,6 @@
 {
   "steps": {
-    "_build": {
+    "build_": {
       "app": {
         "requires": {
           "pisco-cells-cordova-app-publish": "^0.3.0",
