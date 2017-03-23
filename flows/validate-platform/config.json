@@ -3,13 +3,7 @@
   "description": "Cells platform validation flow",
   "params": {},
   "steps": {
-    "integration-testing": {
-      "cells-platform" : {
-        "requires" : {
-          "pisco-cells-platform-validate": "^0.1.0"
-        }
-      }
-    }
+    "integration-testing": {}
   }
 }
 

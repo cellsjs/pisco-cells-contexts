@@ -1,20 +1,7 @@
 {
-  "steps": {
-    "build_": {
-      "app": {
-        "requires": {
-          "pisco-cells-cordova-app-publish": "^0.3.0",
-          "cells-app": "^0.7.0"
-        }
-      },
-      "cordova-app": {
-        "requires": {
-          "pisco-cells-cordova-app-publish": "^0.3.0",
-          "cells-app": "^0.7.0"
-        }
-      }
-    }
-  },
   "name": "restore",
-  "description": "Restore your application from package.json configuration"
+  "description": "Restore your application from package.json configuration",
+  "steps": {
+    "build_": {}
+  }
 }

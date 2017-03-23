@@ -2,12 +2,6 @@
   "name": "kpis",
   "description": "Show workspace kpis",
   "steps": {
-    "show-kpis": {
-      "workspace" : {
-        "requires" : {
-          "cells-stats": "^0.5.0"
-        }
-      }
-    }
+    "show-kpis": {}
   }
 }

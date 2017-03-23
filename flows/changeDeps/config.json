@@ -6,19 +6,7 @@
     "neverAskMove": true
   },
   "steps": {
-    "checkSSH": {
-      "environment": {
-        "requires": {
-          "cells-migration-tool": "^0.1.2"
-        }
-      }
-    },
-    "d2rAll": {
-      "environment": {
-        "requires": {
-          "cells-migration-tool": "^0.1.2"
-        }
-      }
-    }
+    "checkSSH": {},
+    "d2rAll": {}
   }
 }

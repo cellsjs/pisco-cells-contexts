@@ -1,13 +1,7 @@
 {
-  "steps": {
-    "theme": {
-      "component" : {
-        "requires" : {
-          "pisco-cells-component-theme": "^0.3.0"
-        }
-      }
-    }
-  },
   "name": "theme",
-  "description": "Check if a component is using a theme"
+  "description": "Check if a component is using a theme",
+  "steps": {
+    "theme": {}
+  }
 }

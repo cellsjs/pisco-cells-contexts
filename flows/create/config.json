@@ -3,27 +3,6 @@
   "description": "Context creation flow",
   "isGenerator": true,
   "steps": {
-    "create": {
-      "cordova-plugin": {
-        "requires": {
-          "pisco-cells-cordova-plugin": "^0.2.0"
-        }
-      },
-      "app": {
-        "requires": {
-          "pisco-cells-app-create": "^0.6.0"
-        }
-      },
-      "component": {
-        "requires": {
-          "pisco-cells-component-create": "^0.4.0"
-        }
-      },
-      "workspace": {
-        "requires": {
-          "pisco-cells-workspace-create": "^0.7.0"
-        }
-      }
-    }
+    "create": {}
   }
 }

@@ -1,39 +1,18 @@
 {
   "name": "validate",
   "description": "Cells components validation flow",
-  "params": {},
   "steps": {
     "lint": {
-      "implementation-check" : false,
-      "component" : {
-        "requires" : {
-          "pisco-cells-component-lint": "^0.6.0"
-        }
-      }
+      "implementation-check" : false
     },
     "unit-testing": {
-      "implementation-check" : false,
-      "component" : {
-        "requires" : {
-          "pisco-cells-component-unit-testing": "^0.1.0"
-        }
-      }
+      "implementation-check" : false
     },
     "demo-tests": {
-      "implementation-check" : false,
-      "component" : {
-        "requires" : {
-          "pisco-cells-component-demo-tests": "^0.5.0"
-        }
-      }
+      "implementation-check" : false
     },
     "check-theme": {
-      "implementation-check" : false,
-      "component" : {
-        "requires" : {
-          "pisco-cells-component-theme": "^0.3.0"
-        }
-      }
+      "implementation-check" : false
     }
   }
 }

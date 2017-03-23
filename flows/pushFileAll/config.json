@@ -3,12 +3,6 @@
   "description": "Add one file to all repos",
   "isGenerator": true,
   "steps": {
-    "pushAll": {
-      "environment": {
-        "requires": {
-          "cells-migration-tool": "^0.1.3"
-        }
-      }
-    }
+    "pushAll": {}
   }
 }

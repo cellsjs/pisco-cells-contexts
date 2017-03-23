@@ -2,19 +2,8 @@
   "name": "smoke-testing",
   "description": "Build Verification Testing",
   "steps": {
-    "deploy": {
-      "catalog": {
-        "requires": {
-          "pisco-cells-cordova-app-publish": "^0.3.4"
-        }
-      }
-    },
+    "deploy": {},
     "smoke-testing": {
-      "catalog": {
-        "requires": {
-          "pisco-cells-catalog-smoke-testing": "^0.1.0"
-        }
-      },
       "inputs": {
         "smokeTestsBaseUrl": { "deploy": "baseUrl" }
       }

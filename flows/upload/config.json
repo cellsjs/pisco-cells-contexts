@@ -2,12 +2,6 @@
   "name": "upload",
   "description": "Upload bundle",
   "steps": {
-    "upload": {
-      "bundle" : {
-        "requires" : {
-          "pisco-cells-bundle-upload": "^0.0.2"
-        }
-      }
-    }
+    "upload": {}
   }
 }

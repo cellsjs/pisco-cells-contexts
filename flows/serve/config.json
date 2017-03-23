@@ -2,12 +2,6 @@
   "name": "serve-app",
   "description": "Serve the distribution of a Cells application",
   "steps": {
-    "serve": {
-      "app" : {
-        "requires" : {
-          "cells-app": "^0.7.0"
-        }
-      }
-    }
+    "serve": {}
   }
 }

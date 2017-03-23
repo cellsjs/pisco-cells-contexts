@@ -2,19 +2,8 @@
   "name": "serve",
   "description": "Serve your components",
   "steps": {
-    "polyserve": {
-      "component" : {
-        "requires" : {
-          "pisco-cells-serve": "^0.4.0"
-        }
-      }
-    },
+    "polyserve": {},
     "browser-sync": {
-      "component" : {
-        "requires" : {
-          "pisco-cells-serve": "^0.4.0"
-        }
-      },
       "inputs": {
         "proxyPort": { "polyserve": "port" }
       }

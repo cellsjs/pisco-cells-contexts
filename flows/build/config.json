@@ -2,22 +2,6 @@
   "name": "build",
   "description": "Build the distribution of a Cells application",
   "steps": {
-    "build": {
-      "app": {
-        "requires": {
-          "cells-app": "^0.7.0"
-        }
-      },
-      "iconset": {
-        "requires": {
-          "pisco-cells-iconset-create": "^0.1.2"
-        }
-      },
-      "catalog": {
-        "requires": {
-          "pisco-cells-catalog-build": "^0.1.0"
-        }
-      }
-    }
+    "build": {}
   }
 }

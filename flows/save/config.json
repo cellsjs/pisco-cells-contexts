@@ -1,13 +1,7 @@
 {
-  "steps": {
-    "save": {
-      "cordova-app": {
-        "requires": {
-          "pisco-cells-cordova-app-publish": "^0.2.6"
-        }
-      }
-    }
-  },
   "name": "save",
-  "description": "Save the current state of cordova application in package.json"
+  "description": "Save the current state of cordova application in package.json",
+  "steps": {
+    "save": {}
+  }
 }
