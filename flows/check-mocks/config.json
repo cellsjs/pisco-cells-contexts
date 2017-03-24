@@ -1,7 +1,0 @@
-{
-  "name": "check-mocks",
-  "description": "Check composer mocks",
-  "steps": {
-    "check-mocks": {}
-  }
-}

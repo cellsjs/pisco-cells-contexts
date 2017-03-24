@@ -1,7 +1,0 @@
-{
-  "name": "check-theme",
-  "description": "Check if a component is using a theme",
-  "steps": {
-    "check-theme": {}
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "name": "validate-platform",
-  "description": "Cells platform validation flow",
-  "params": {},
-  "steps": {
-    "integration-testing": {}
-  }
-}
-

@@ -1,7 +1,0 @@
-{
-  "name": "save",
-  "description": "Save the current state of cordova application in package.json",
-  "steps": {
-    "save": {}
-  }
-}
