@@ -4,13 +4,13 @@
       "app": {
         "requires": {
           "pisco-cells-cordova-app-publish": "^0.3.0",
-          "cells-app": "^0.7.0"
+          "cells-app": "^0.8.0"
         }
       },
       "cordova-app": {
         "requires": {
           "pisco-cells-cordova-app-publish": "^0.3.0",
-          "cells-app": "^0.7.0"
+          "cells-app": "^0.8.0"
         }
       }
     }
