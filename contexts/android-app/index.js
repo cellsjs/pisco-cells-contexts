@@ -6,7 +6,7 @@ module.exports = {
 
   check() {
     return fsUtils.exists('settings.gradle')
-        && fsUtils.exists('build.gradle');
+      && fsUtils.exists('build.gradle');
   }
 
 };
