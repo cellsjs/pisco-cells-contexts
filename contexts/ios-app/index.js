@@ -5,12 +5,10 @@ const fs = require('fs');
 module.exports = {
 
   check() {
+    const files = fs.readdirSync('.');
+    const xcodeFiles = files.filter(file => file.endsWith('.xcodeproj'));
 
-    fs.readdir(__dirname, (err, files) => {
-      files	.filter( function(file) {
-              return file.endsWith('.xcodeproj');})
-    });
-
+    return xcodeFiles.length > 0;
   }
 
 };
