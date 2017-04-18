@@ -41,6 +41,14 @@
         "workingDir" : {"build_": "workingDir"}
       }
     },
+    "functional-testing": {
+      "type": "flow",
+      "implementation-check": false,
+      "inputs": {
+        "workingDir": { "build_": "workingDir" },
+        "appName": { "build_": "appName" }
+      }
+    },    
     "publish": {
       "master": {
         "requires": {
