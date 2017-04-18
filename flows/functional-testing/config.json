@@ -1,0 +1,23 @@
+{
+  "name": "functional-testing",
+  "description": "Functional Testing",
+  "steps": {
+    "deploy": {
+      "app": {
+        "requires": {
+          "pisco-cells-cordova-app-publish": "^0.3.4"
+        }
+      }
+    },
+    "functional-testing": {
+      "app": {
+        "requires": {
+          "pisco-cells-app-functional-testing": "^0.3.0"
+        }
+      },
+      "inputs": {
+        "appBaseUrl": { "deploy": "baseUrl" }
+      }
+    }
+  }
+}
