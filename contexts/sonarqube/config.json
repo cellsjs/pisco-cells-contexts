@@ -1,0 +1,4 @@
+{
+  "name": "sonarqube",
+  "description": "Cells sonarqube context (for remote analysis)"
+}
