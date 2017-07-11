@@ -10,7 +10,9 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "fs-extra": "^3.0.1",
     "mocha": "^3.3.0",
+    "pisco-callback-to-promise": "^0.1.11",
     "piscosour": "^1.0.0"
   },
   "author": "",
