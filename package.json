@@ -1,6 +1,6 @@
 {
   "name": "pisco-cells-contexts",
-  "version": "2.0.4-beta.0",
+  "version": "2.0.4-alpha.0",
   "description": "Pisco context definitions for Cells project",
   "keywords": [
     "piscosour-recipe"
@@ -11,6 +11,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "fs-extra": "^3.0.1",
+    "istanbul": "^0.4.5",
     "mocha": "^3.3.0",
     "pisco-callback-to-promise": "^0.1.11",
     "piscosour": "^1.0.0"
