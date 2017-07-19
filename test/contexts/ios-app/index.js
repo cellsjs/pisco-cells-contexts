@@ -25,13 +25,13 @@ describe('Testing the ios-app context', () => {
     //Assert
     expect(iosApp.check()).to.be.true;
   });
-  it('Should say it is a ios-app context', () => {
+  /*it('Should say it is a ios-app context', () => {
     //Act
     process.chdir(PROJECT_TO_ANALYZE);
     var fd = fs.openSync('sampleWorkspace.xcworkspace', 'w');
     //Assert
     expect(iosApp.check()).to.be.true;
-  });
+  });*/
   it('Should say it is a ios-app context', () => {
     //Act
     process.chdir(PROJECT_TO_ANALYZE);
