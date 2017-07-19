@@ -10,7 +10,7 @@ const path = require('path');
 /* global define, it, describe, before, beforeEach, afterEach, expect, after */
 describe('Testing the hybrid-android-app context', () => {
   const currentDir = process.cwd();
-  const dummyProjectPath = __dirname + `/dummy`;
+  const dummyProjectPath = __dirname + '/dummy';
 
   beforeEach('Creating Dummy Hybrid Structure', (done) => {
     pctp.c2p(fs.mkdir, dummyProjectPath)
@@ -68,43 +68,42 @@ describe('Testing the hybrid-android-app context', () => {
     const gradleSettings = fs.openSync('settings.gradle', 'w');
     const gradleFile = fs.openSync('build.gradle', 'w');
     const pathToAppFolder = path.join(dummyProjectPath, 'app/');
+    let pathTest = '';
 
     return pctp.c2p(fs.mkdir, pathToAppFolder)
       .then(() => {
         process.chdir(pathToAppFolder);
         const appGradleFile = fs.openSync('build.gradle', 'w');
-        const pathToSrcFolder = path.join(pathToAppFolder, 'src/');
-        return pctp.c2p(fs.mkdir, pathToSrcFolder)
-          .then(() => {
-            process.chdir(pathToSrcFolder);
-            const pathToMainFolder = path.join(pathToSrcFolder, 'main/');
-            return pctp.c2p(fs.mkdir, pathToMainFolder)
-              .then(() => {
-                process.chdir(pathToMainFolder);
-                const pathToAssetsFolder = path.join(pathToMainFolder, 'assets/');
-                return pctp.c2p(fs.mkdir, pathToAssetsFolder)
-                  .then(() => {
-                    process.chdir(pathToAssetsFolder);
-                    const pathToWWWFolder = path.join(pathToAssetsFolder, 'www/');
-                    return pctp.c2p(fs.mkdir, pathToWWWFolder)
-                      .then(() => {
-                        process.chdir(dummyProjectPath);
-                        console.log(process.cwd());
-                        console.log(hybridAndroidApp.check());
-                        expect(hybridAndroidApp.check()).to.be.true;
-                        return Promise.resolve();
-                      })
-                      .catch(err => {
-                        throw err;
-                      });
-                  });
-              });
-          });
+        pathTest = path.join(pathToAppFolder, 'src/');
+        return pctp.c2p(fs.mkdir, pathTest);
+      })
+      .then(() => {
+        process.chdir(pathTest);
+        pathTest = path.join(pathTest, 'main/');
+        return pctp.c2p(fs.mkdir, pathTest);
+      })
+      .then(() => {
+        process.chdir(pathTest);
+        pathTest = path.join(pathTest, 'assets/');
+        return pctp.c2p(fs.mkdir, pathTest);
+      })
+      .then(() => {
+        process.chdir(pathTest);
+        pathTest = path.join(pathTest, 'www/');
+        return pctp.c2p(fs.mkdir, pathTest);
+      })
+      .then(() => {
+        process.chdir(dummyProjectPath);
+        expect(hybridAndroidApp.check()).to.be.true;
+        return Promise.resolve();
+      })
+      .catch(err => {
+        throw err;
       });
   });
-
   afterEach('Get back to the correct directory', () => {
     process.chdir(currentDir);
     fs.removeSync(dummyProjectPath);
   });
 });
+
