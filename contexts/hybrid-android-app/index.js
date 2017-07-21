@@ -3,53 +3,28 @@
 const fs = require('fs');
 const path = require('path');
 
+
 module.exports = {
 
   check() {
-    var files = fs.readdirSync('.');
-    var isWwwDir = false;
-    var appGradleFiles = [];
+    const isGradleFile = file => file.endsWith('.gradle');
 
-    // ProjectName -> exists and contains gradle files
-    const currentDir = process.cwd();
-    const gradleFiles = files.filter(file => (file.endsWith('.gradle')));
-    const appFiles = files.filter(file => (file.startsWith('app')));
+    const projectPath = process.cwd();
+    const appPath = `${projectPath}/app`;
+    const wwwPath = `${projectPath}/app/src/main/assets/www/`;
 
-    // ProjectName/app -> exists and contains appGradleFile
-    if(appFiles.length > 0) {
-      process.chdir('app/');
-      files = fs.readdirSync('.');
-      const srcFiles = files.filter(file => (file.startsWith('src')));
-      appGradleFiles = files.filter(file => (file.endsWith('.gradle')));
+    let isAppGradleFiles = false;
+    let isProjectGradleFiles = false;
 
-      // ProjectName/app/src -> exists
-      if(srcFiles.length > 0) {
-        process.chdir('src/');
-        files = fs.readdirSync('.');
-        const mainFiles = files.filter(file => (file.startsWith('main')));
+    const isWwwDir = fs.existsSync(wwwPath) && fs.statSync(wwwPath).isDirectory();
 
-        // ProjectName/app/src/main -> exists
-        if(mainFiles.length > 0) {
-          process.chdir('main/');
-          files = fs.readdirSync('.');
-          const assetsFiles = files.filter(file => (file.startsWith('assets')));
+    if (isWwwDir) {
+      isAppGradleFiles = fs.readdirSync(appPath).filter(isGradleFile).length > 0;
+      isProjectGradleFiles = fs.readdirSync(appPath).filter(isGradleFile).length > 0;
 
-          // ProjectName/app/src/main/assets -> exists
-          if(assetsFiles.length > 0) {
-            process.chdir('assets/');
-            files = fs.readdirSync('.');
-            const wwwFiles = files.filter(file => (file.startsWith('www')));
-
-            // ProjectName/app/src/main/assets/www -> exists and is directory
-            if(wwwFiles.length > 0) {
-              process.chdir(currentDir);
-              isWwwDir = fs.statSync(`${currentDir}/app/src/main/assets/www/`).isDirectory();
-            }
-          }
-        }
-      }
+      return isAppGradleFiles && isProjectGradleFiles;
     }
 
-    return gradleFiles.length > 1 && appGradleFiles.length > 0 && isWwwDir;
+    return false;
   }
 };
