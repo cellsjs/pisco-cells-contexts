@@ -20,7 +20,7 @@ module.exports = {
 
     if (isWwwDir) {
       isAppGradleFiles = fs.readdirSync(appPath).filter(isGradleFile).length > 0;
-      isProjectGradleFiles = fs.readdirSync(appPath).filter(isGradleFile).length > 0;
+      isProjectGradleFiles = fs.readdirSync(projectPath).filter(isGradleFile).length > 0;
 
       return isAppGradleFiles && isProjectGradleFiles;
     }
