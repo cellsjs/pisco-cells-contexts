@@ -21,7 +21,7 @@ module.exports = {
 
       //3rd the 'www' element is a directory
       if (webFolder.length > 0) {
-        existsWWWasDir = fs.statSync(projectName + '/www').isDirectory;
+        existsWWWasDir = fs.statSync(projectName + '/www').isDirectory();
       }
     }
 
