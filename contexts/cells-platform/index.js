@@ -5,8 +5,15 @@ const fsUtils = require('../../lib/fsUtils');
 module.exports = {
 
   check() {
-    return fsUtils.readJSON('.piscosour/piscosour.json').context === 'cells-platform' ||
-      fsUtils.readJSON('package.json').name === 'cells-platform';
+    let contract;
+    const file = 'package.json';
+    try {
+      contract = fsUtils.readJSON(file);
+    } catch (e) {
+      console.log('Error reading file', file, e);
+    }
+
+    return contract !== undefined && contract.cells !== undefined && contract.cells.dependencies !== undefined;
   }
 
 };
