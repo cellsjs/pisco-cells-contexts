@@ -6,14 +6,14 @@ module.exports = {
 
   check() {
     let contract;
-    const file = 'package.json';
+    const file = 'cells-platform.json';
     try {
       contract = fsUtils.readJSON(file);
     } catch (e) {
       console.log('Error reading file', file, e);
     }
 
-    return contract !== undefined && contract.cells !== undefined && contract.cells.dependencies !== undefined;
+    return contract !== undefined && contract.composer !== undefined ;
   }
 
 };

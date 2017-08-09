@@ -2,7 +2,7 @@
 
 
 const expect = require('chai').expect;
-const iosApp = require('../../../contexts/cells-platform/index');
+const platform = require('../../../contexts/cells-platform/index');
 const pctp = require('pisco-callback-to-promise');
 const fs = require('fs-extra');
 
@@ -15,21 +15,21 @@ describe('Testing the cells-platform context', () => {
   });
   it('Should say is not a cells-platform context', () => {
     //Assert
-    expect(iosApp.check()).to.be.false;
+    expect(platform.check()).to.be.false;
   });
-  it('Should say it not a cells-platform context with wrong package.json', () => {
+  it('Should say it not a cells-platform context with wrong cells-platform.json', () => {
     //Act
     process.chdir(PROJECT_TO_ANALYZE);
-    fs.writeFileSync('package.json', 'w');
+    fs.writeFileSync('cells-platform.json', 'w');
     //Assert
-    expect(iosApp.check()).to.be.false;
+    expect(platform.check()).to.be.false;
   });
   it('Should say it is a cells-platform context', () => {
     //Act
     process.chdir(PROJECT_TO_ANALYZE);
-    fs.writeFileSync('package.json', '{"cells" : {"dependencies": {}}}');
+    fs.writeFileSync('cells-platform.json', '{"composer" : ""}');
     //Assert
-    expect(iosApp.check()).to.be.true;
+    expect(platform.check()).to.be.true;
   });
   afterEach('Get back to the correct directory', () => {
     process.chdir(currentDirectory);
