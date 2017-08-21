@@ -8,6 +8,8 @@ describe('Testing the sonarqube context', () => {
   const currentDirectory = process.cwd();
   const PROJECT_TO_ANALYZE = '/project-to-analyze';
   it('Should say is not a sonarqube context', () => {
+    //Given
+    process.chdir(__dirname);
     //Assert
     expect(sonarqube.check()).to.be.false;
   });
