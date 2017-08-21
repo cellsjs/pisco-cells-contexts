@@ -6,7 +6,10 @@
     "piscosour-recipe"
   ],
   "scripts": {
-    "test": "mocha  -u tdd --recursive"
+    "deps": "npm install",
+    "test": "mocha -u tdd --recursive",
+    "coverage": "istanbul cover --report lcovonly --dir test-reports node_modules/.bin/_mocha -- -R  spec test/**/*.js",
+    "sonar": "sonar-scanner"
   },
   "devDependencies": {
     "chai": "^3.5.0",
