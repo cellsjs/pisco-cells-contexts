@@ -20,7 +20,7 @@ describe('Testing the cells-platform context', () => {
   it('Should say it not a cells-platform context with wrong cells-platform.json', () => {
     //Act
     process.chdir(PROJECT_TO_ANALYZE);
-    fs.writeFileSync('cells-platform.json', 'w');
+    fs.writeFileSync('cells-platform.json', '{}');
     //Assert
     expect(platform.check()).to.be.false;
   });
