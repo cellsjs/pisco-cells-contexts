@@ -11,11 +11,10 @@ module.exports = {
     const xcodeFiles = files.filter(file => (file.endsWith('.xcodeproj') || file.endsWith('.xcworkspace')));
 
     //2nd exists a folder inside the sources folder called 'www'
-    let projectName = 'NoName';
     let existsWWWasDir = false;
 
     if (xcodeFiles.length > 0) {
-      projectName = xcodeFiles[0].substr(0, xcodeFiles[0].indexOf('.'));
+      let projectName = xcodeFiles[0].substr(0, xcodeFiles[0].indexOf('.'));
       const sourcesFolder = fs.readdirSync(projectName);
       const webFolder = sourcesFolder.filter(file => (file.startsWith('www')));
 

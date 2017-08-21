@@ -9,10 +9,7 @@ module.exports = {
     const file = 'cells-platform.json';
     try {
       contract = fsUtils.readJSON(file);
-    } catch (e) {
-      console.log('Error reading file', file, e);
-    }
-
+    } catch (e) {}
     return contract !== undefined && contract.composer !== undefined ;
   }
 
