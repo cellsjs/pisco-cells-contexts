@@ -1,6 +1,6 @@
 {
   "name": "pisco-cells-contexts",
-  "version": "2.5.0-beta.1",
+  "version": "2.5.0-alpha.2",
   "description": "Pisco context definitions for Cells project",
   "keywords": [
     "piscosour-recipe"
