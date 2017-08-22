@@ -17,7 +17,8 @@
     "istanbul": "^0.4.5",
     "mocha": "^3.3.0",
     "pisco-callback-to-promise": "^0.1.11",
-    "piscosour": "^1.0.0"
+    "piscosour": "^1.0.0",
+    "rimraf": "^2.6.1"
   },
   "author": "",
   "license": "ISC"
