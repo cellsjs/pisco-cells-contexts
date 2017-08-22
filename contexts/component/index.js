@@ -10,11 +10,12 @@ module.exports = {
     }
     const bowerJson = fsUtils.readJSON('bower.json');
 
-    return !fsUtils.exists('package.json') && bowerJson.dependencies
-      && bowerJson.dependencies.polymer
-      && bowerJson.name
+    return !fsUtils.exists('package.json')
+      && bowerJson.hasOwnProperty('dependencies')
+      && bowerJson.dependencies.hasOwnProperty('polymer')
+      && bowerJson.hasOwnProperty('name')
       && bowerJson.name !== 'repo-configs'
-      && !bowerJson.variants;
+      && !bowerJson.hasOwnProperty('variants');
   }
 
 };
