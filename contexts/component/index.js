@@ -10,12 +10,20 @@ module.exports = {
     }
     const bowerJson = fsUtils.readJSON('bower.json');
 
+    function firstBowerProperties() {
+      return bowerJson.hasOwnProperty('dependencies')
+        && bowerJson.dependencies.hasOwnProperty('polymer')
+        && bowerJson.hasOwnProperty('name');
+    }
+
+    function bowerCharacteristics() {
+      return firstBowerProperties()
+        && bowerJson.name !== 'repo-configs'
+        && !bowerJson.hasOwnProperty('variants');
+    }
+
     return !fsUtils.exists('package.json')
-      && bowerJson.hasOwnProperty('dependencies')
-      && bowerJson.dependencies.hasOwnProperty('polymer')
-      && bowerJson.hasOwnProperty('name')
-      && bowerJson.name !== 'repo-configs'
-      && !bowerJson.hasOwnProperty('variants');
+      && bowerCharacteristics();
   }
 
 };
